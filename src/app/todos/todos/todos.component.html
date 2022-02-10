@@ -1,0 +1,6 @@
+<div class="input-field">
+	<i class="material-icons prefix">add_alarm</i>
+	<input type="text" class="form-control" placeholder="Add Todo..." #input (keydown.enter)="add(input)">
+</div>
+
+<div *ngFor="let item of todos$ | async">{{item.title}}</div>
